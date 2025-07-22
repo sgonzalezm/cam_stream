@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Cámara IP</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menú hamburguesa -->
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <!-- Menú lateral -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h3>Opciones</h3>
+                <div class="close-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <ul class="menu">
+                <li><a href="#" class="camera-option active" data-source="rtsp://sgonzalezm:3lR10Quefluye.3675@192.168.100.211:554/stream1">
+                    <i class="fas fa-video"></i> Cámara Principal
+                </a></li>
+                <li><a href="#" class="camera-option" data-source="rtsp://sgonzalezm:3lR10Quefluye.3675@192.168.100.211:554/stream2">
+                    <i class="fas fa-video"></i> Cámara Secundaria
+                </a></li>
+                <li><a href="videos.html">
+                    <i class="fas fa-folder"></i> Archivo de Videos
+                </a></li>
+                <li><a href="configuracion.html">
+                    <i class="fas fa-cog"></i> Configuración
+                </a></li>
+            </ul>
+        </div>
+        
+        <!-- Reproductor de video -->
+        <div class="video-container">
+            <video id="videoPlayer" controls autoplay>
+                <source src="rtmp://tu_camara_ip/live/stream" type="rtmp/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
