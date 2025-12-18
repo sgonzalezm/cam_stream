@@ -46,5 +46,6 @@ Note: This project does not consider any kind of transcoding or compression for 
 
 
 
+<h2>ANNEX C - Hardware requirements</h2>
 
 
